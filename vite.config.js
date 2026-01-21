@@ -4,8 +4,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [
     react({
-      jsxRuntime: "automatic" // handles JSX without requiring React globally
+      jsxRuntime: "automatic" // ensures JSX works in production
     })
   ],
-  base: "./" // fixes blank page in production on Vercel
+  base: "./" // fixes blank page paths on Vercel
 });
